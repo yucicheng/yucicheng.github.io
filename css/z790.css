@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 導覽列 */
+
+header {
+    background-color: black;
+    height: 3.6vw;
+    width: 100%;
+}
+
+header svg {
+    fill: red;
+    width: 200px;
+    position: absolute;
+    margin-left: 11.5vw;
+    margin-top: 0.5vw;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 2vw;
+}
+
+header ul {
+    position: absolute;
+    right: 8vw;
+    top: 1vw;
+}
+
+footer {
+    display: flex;
+    margin-bottom: 1vw;
+}
+
+footer div svg {
+    fill: red;
+    width: 200px;
+    position: absolute;
+    margin-left: 11.5vw;
+    margin-top: -1vw;
+}
+
+footer ul {
+    display: flex;
+    margin-top: -.5vw;
+    margin-left: 73vw;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 1vw;
+}
+
+footer ul li a:hover {
+    color: red;
+}
+
+footer ul li {
+    color: white;
+}
+
+.cmp-modelselection__group {
+    border-top: 1px solid black;
+    margin-top: 4vw;
+    padding-bottom: 2rem;
+}
+
+.productimg img{
+    width: 800px;
+    margin-top: 5vw;
+}
+
+.product {
+    display: flex;
+}
+
+.productinfo h2 {
+    font-size: 50px;
+    margin-top: 10vw;
+}
+
+.productinfo p {
+    font-size: 20px;
+    margin-top: 5vw;
+}
+
+.feature {
+    display: flex;
+    margin-top: 10vw;
+    margin-left: 5vw;
+}
+
+.featureinfo {
+    width: 125px;
+    margin-right: 8vw;
+    margin-left: 5vw;
+}
+
+.featureinfo h2 {
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: -1vw;
+}
+
+.price {
+    margin-top: 3vw;
+    display: flex;
+}
+
+.price h3 {
+    font-size: 40px;
+    position: absolute;
+    margin-left: 23vw;
+}
+
+.buy {
+    display: flex;
+    margin-left: 16vw;
+    margin-right: 10vw;
+    margin-top: 6vw;
+}
+
+.buy a {
+    text-decoration: none;
+    color: white;
+    margin-right: 2vw;
+    font-size: 30px;
+    position: relative;
+    margin-left: 2vw;
+}
+
+.buy_1 {
+    background-color: black;
+}
+
+.buy_2 {
+    background-color: black;
+    margin-left: 4vw;
+}
+
+.product_img {
+    margin-top: 10vw;
+}
+
+.product_img h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.product_img div {
+    display: flex;
+}
+
+.product_img div img {
+    margin-top: 2vw;
+    width: 620px;
+    margin-right: 1vw;
+}
+
+.buy a:hover {
+    color: red;
+}

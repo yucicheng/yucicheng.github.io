@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 導覽列 */
+
+header {
+    background-color: black;
+    height: 3.6vw;
+    width: 100%;
+}
+
+header svg {
+    fill: red;
+    width: 200px;
+    position: absolute;
+    margin-left: 11.5vw;
+    margin-top: 0.5vw;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 2vw;
+}
+
+header ul {
+    position: absolute;
+    right: 8vw;
+    top: 1vw;
+}
+
+/* 圖片 */
+.slides {
+    position: relative;
+    width: 100%;
+    height: 39.4vw;
+    top: -.7vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slide {
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s transform ease-in-out;
+}
+
+.slide:nth-of-type(2) {
+    left: 100%;
+}
+
+.slide:nth-of-type(3) {
+    left: 200%;
+}
+
+img {
+    width: 100%;
+}
+
+input[type="radio"] {
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.control-visible {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    top: 37vw;
+    text-align: center;
+}
+
+.control-visible label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~
+.control-visible label:nth-of-type(1) {
+    background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~
+.control-visible label:nth-of-type(2) {
+    background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~
+.control-visible label:nth-of-type(3) {
+    background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+    transform: translateX(0%);
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+    transform: translateX(-100%);
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
+    transform: translateX(-200%);
+}
+
+.showitem div h2 {
+    margin-top: 4vw;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.show {
+    margin-bottom: 10vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.showitemimg {
+    display: flex;
+}
+
+.showitemimg div a img {
+    position: relative;
+    width: 240px;
+    margin-right: 4vw;
+}
+
+.showtext a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.showtext {
+    position: relative;
+    margin-top: 2.5vw;
+    margin-left: 4vw;
+}
+
+.showtext a:hover {
+    color: red;
+}
+
+.product {
+    margin-bottom: 5vw;
+}
+
+.product h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.product_info {
+    margin-top: 5vw;
+    display: flex;
+    margin-left: 4vw;
+}
+
+.product_info div img {
+    width: 550px;
+    height: 300px;
+    padding-right: 3vw;
+}
+
+.product_info div h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 2vw;
+}
+
+.product_info div a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.product_info div a:hover {
+    color: red;
+}
+
+footer {
+    display: flex;
+    margin-bottom: 1vw;
+}
+
+footer div svg {
+    fill: red;
+    width: 200px;
+    position: absolute;
+    margin-left: 11.5vw;
+    margin-top: -1vw;
+}
+
+footer ul {
+    display: flex;
+    margin-top: -.5vw;
+    margin-left: 73vw;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 1vw;
+}
+
+footer ul li a:hover {
+    color: red;
+}
+
+footer ul li {
+    color: white;
+}
+
+.cmp-modelselection__group {
+    border-top: 1px solid black;
+    margin-top: 4vw;
+    padding-bottom: 2rem;
+}
